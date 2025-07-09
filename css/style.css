@@ -6,6 +6,7 @@
 :root{
     --theme-heading:#cc9900;
     --theme-white:#fff;
+    --theme-grey:#808080cc;
 }
 .container{
     max-width: 1320px;
@@ -31,6 +32,9 @@ html,body{
 .align-item-center{
     align-items: center;
 }
+.text-center{
+    text-align: center;
+}
 ul li{
     list-style: none;
 }
@@ -43,7 +47,33 @@ img{
     width: 100%;
     display: block;
 }
-
+.col-3{
+    width: 25%;
+    padding: 15px;
+}
+.col-6{
+    width: 50%;
+    padding: 15px;
+}
+.col-12{
+    width: 100%;
+    padding: 15px;
+}
+.mt-4{
+    margin-top: 4rem;
+}
+.mt-2{
+    margin-top: 2rem;
+}
+.btn{
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 1rem 2.5rem;
+    color: var(--theme-white);
+    background-color: var(--theme-heading);
+    border-radius: 5px;
+}
 /* Header Section Start */
 header{
     padding: 1rem;
@@ -87,16 +117,60 @@ header .navbar ul li a:hover{
     margin: 100px 0;
 }
 .intro-heading h3{
-    text-align: center;
     font-size: 34px;
     font-weight: 400;
     color: var(--theme-heading);
     margin-bottom: 30px;
 }
-.intro-sub-heading{
-    text-align: center;
+.intro-heading p{
     font-size: 24px;
-
-
+}
+.card .card-content h3{
+    color: var(--theme-heading);
+    font-size: 26px;
+    font-weight: 400;
+    margin: 1.5rem 0;
+}
+.card .card-content p{
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 1.5;
+    color: var(--theme-grey);
+}
+.card .card-content a{
+    margin-top: 1rem;
+    transition: all .3s ease-in-out;
+}
+.card .card-content a:hover{
+    background-color: #8b6900;
 }
 /* Introduction Section End */
+
+/* Blog Section Start */
+.blog-heading h3{
+    color: var(--theme-heading);
+    font-size: 30px;
+    font-weight: 400;
+}
+.blog-heading p{
+    color: var(--theme-grey);
+    font-size: 22px;   
+    font-weight: 300; 
+    margin: 2rem 0;
+}
+.blog-content p{
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 1.8;
+    color: var(--theme-grey);
+}
+.blog-content a{
+    margin-top: 1rem;
+}
+.categories-sec h3{
+    color: var(--theme-heading);
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+/* Blog Section End */
