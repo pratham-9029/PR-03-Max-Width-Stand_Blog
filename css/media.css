@@ -1,1 +1,102 @@
+/* Default mobile */
+.col-12, .col-7, .col-6, .col-5, .col-3 {
+  width: 100%;
+  padding: 15px;
+}
 
+/* Tablets */
+@media (min-width: 576px) {
+  .col-6 {
+    width: 100%;
+  }
+  .col-5 {
+    width: 100%;
+  }
+  .col-3 {
+    width: 100%;
+  }
+}
+
+/* Medium devices  */
+@media (min-width: 768px) {
+  .col-6 {
+    width: 50%;
+  }
+  .col-5 {
+    width: 41.65%;
+  }
+  .col-7 {
+    width: 58.31%;
+  }
+  .col-3 {
+    width: 50%;
+  }
+}
+
+/* Large devices */
+@media (min-width: 992px) {
+  .col-3 {
+    width: 25%;
+  }
+}
+
+/* Extra large devices */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+/* Extra extra large devices */
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+/* For Extra Implement */
+@media (max-width: 768px) {
+  header .navbar ul li a {
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    font-size: 16px;
+  }
+
+  .intro-heading h3, .blog-sec h3, footer h3 {
+    font-size: 26px;
+  }
+
+  .intro-heading p, .blog-heading p, .blog-content p {
+    font-size: 18px;
+  }
+
+  .btn {
+    font-size: 16px;
+    padding: 0.8rem 2rem;
+  }
+
+  .hero .hero-img img {
+    height: auto;
+    max-height: 400px;
+  }
+
+  footer .footer-col-4 img {
+    height: 70px;
+    width: 70px;
+  }
+}
+
+@media (max-width: 576px) {
+  .blog-heading p,
+  .blog-content p,
+  .post-content p,
+  .categories-sec ul li a,
+  .foote-col-2 ul li a,
+  footer .grey-bg p {
+    font-size: 16px;
+  }
+
+  .footer .copyright h4 {
+    font-size: 16px;
+  }
+}
