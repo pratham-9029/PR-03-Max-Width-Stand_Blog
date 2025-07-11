@@ -51,6 +51,9 @@ img{
     width: 25%;
     padding: 15px;
 }
+.col-4{
+    width: 33.33%;
+}
 .col-5{
     width: 41.65%;
     padding: 15px;
@@ -85,6 +88,9 @@ img{
 }
 .pb-0{
     padding-bottom: 0;
+}
+.p-0{
+    padding: 0;
 }
 .p-2{
     padding: 30px 20px 20px;
@@ -128,6 +134,16 @@ header .navbar ul li a:hover{
     background-color: var(--theme-heading);
     color: var(--theme-white);
     border: none;
+    border-radius: 5px;
+}
+.toggle{
+    display: none;
+}
+.toggle .fa-bars{
+    font-size: 21px;
+    padding: 10px;
+    background-color: var(--theme-heading);
+    color: var(--theme-white);
     border-radius: 5px;
 }
 /* Header Section End */
@@ -206,14 +222,18 @@ header .navbar ul li a:hover{
     margin-bottom: 2rem;
 }
 
-.categories-sec ul li,.foote-col-2 ul li{
+.categories-sec ul li,.useful-sec ul li,.foote-col-2 ul li{
     margin-top: 1.5rem;
 }
-.categories-sec ul li a,.foote-col-2 ul li a{
+.categories-sec ul li a,.useful-sec ul li a,.foote-col-2 ul li a{
     font-size: 18px;
     font-weight: 300;
     text-decoration: underline;
     color: #006699;
+    transition: all .3s ease-in-out;
+}
+.categories-sec ul li a:hover,.useful-sec ul li a:hover,.foote-col-2 ul li a:hover{
+    text-decoration: none;
 }
 .post-content{
     padding-bottom: 25px;
@@ -254,6 +274,9 @@ footer .grey-bg h4{
     font-weight: 600;
     margin-bottom: 1rem;
 }
+footer .foote-col-2 ul li a{
+    color: #cccc66;
+}
 footer .footer-col-3 p{
     font-size: 18px;
     font-weight: 300;
@@ -263,9 +286,15 @@ footer .footer-col-3 p{
     padding-bottom: 1.5rem;
     border-bottom: 1px solid var(--theme-grey);
 }
-footer .footer-col-4 img {
+footer .footer-col-4 .footer-img img {
     height: 100px;
     width: 100px;
+}
+footer .footer-col-4 .footer-img p{
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.9;
+    color: var(--theme-grey);
 }
 footer .copyright h4{
     font-size: 20px;
